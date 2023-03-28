@@ -145,3 +145,8 @@ Print
 
 super + Print
     scrot -s -e 'xclip -selection clipboard -target image/png -i $f && mv $f ~/Pictures/Screenshots/'
+
+#custom
+
+super + shift + w
+    firefox
