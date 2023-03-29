@@ -8,7 +8,8 @@ super + Return
 
 # program launcher
 super + d
-	dmenu_run -fn meslolgsnf
+    dmenu_run -l 5 -p "select" -fn jetbrainsmononerdfont -nb "#101010" -nf "#ffffff" -sb "#b4b4b4" -sf "#000000"
+    # rofi -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -59,8 +60,8 @@ super + {_,shift + }{Left,Down,Up,Right}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
-super + {p,b,comma,period}
-	bspc node -f @{parent,brother,first,second}
+# super + {p,b,comma,period}
+	# bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous window in the current desktop
 super + {_,shift + }c
@@ -150,3 +151,11 @@ super + Print
 
 super + shift + w
     firefox
+
+super + w
+    /home/adi/.config/scripts/wifimenu.sh
+super + x 
+    /home/adi/.config/scripts/powermenu.sh
+
+super + b  
+    /home/adi/.config/scripts/bluetoothmenu.sh

@@ -62,7 +62,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.7
+  opacity: 0.5
   # Startup Mode (changes require restart)
   #
   # Values for `startup_mode`:
@@ -171,10 +171,10 @@ colors:
   name: vscode (dark)
   author: senpai-10
   primary:
-    #background: "#2d353b"
+    # background: "#2d353b"
     # background: "#1A1B26"
-    #background: "#1E222A"
-    background: "#000000"
+    # background: "#1E222A"
+    background: "#101010"
     foreground: "#D4D4D4"
   cursor:
     text: "#1d1f21"

@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
   use 'Yazeed1s/oh-lucy.nvim'
   use 'Yazeed1s/minimal.nvim'
   use 'AlexvZyl/nordic.nvim'
+  use 'itchyny/calendar.vim'
 
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
