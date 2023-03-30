@@ -1,14 +1,14 @@
 #!/bin/bash
 
-case "$(echo -e "shutdown\nreboot\nsuspend\nlock" | dmenu -p "power:" -fn JetBrainsMonoNerdFont -l 4 -nb "#101010" -nf "#ffffff" -sb "#b4b4b4" -sf "#000000")" in
+case "$(echo -e "shutdown\nreboot\nsuspend\nlock" | rofi -dmenu -i -p "Choose" -no-custom -scroll-method 1 -font "JetBrainsMonoNerdFont 11")" in
 shutdown)
-  case "$(echo -e "yes\nno" | dmenu -p "confirm?" -fn JetBrainsMonoNerdFont -l 2 -nb "#101010" -nf "#ffffff" -sb "#b4b4b4" -sf "#000000")" in
+  case "$(echo -e "yes\nno" | rofi -dmenu -i -p "Are You Sure?" -no-custom -scroll-method 1 -font "JetBrainsMonoNerdFont 11")" in
   yes) systemctl poweroff ;;
   no) exit ;;
   esac
   ;;
 reboot)
-  case "$(echo -e "yes\nno" | dmenu -p "confirm?" -fn JetBrainsMonoNerdFont -l 2 -nb "#101010" -nf "#ffffff" -sb "#b4b4b4" -sf "#000000")" in
+  case "$(echo -e "yes\nno" | rofi -dmenu -i -p "Are You Sure?" -no-custom -scroll-method 1 -font "JetBrainsMonoNerdFont 11")" in
   yes) systemctl reboot ;;
   no) exit ;;
   esac
