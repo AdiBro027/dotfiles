@@ -15,3 +15,4 @@ polybar time &
 polybar vol &
 polybar cpu &
 polybar memory &
+polybar logo &
