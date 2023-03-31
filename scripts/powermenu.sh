@@ -1,6 +1,6 @@
 #!/bin/bash
 
-case "$(echo -e "shutdown\nreboot\nsuspend\nlock" | rofi -dmenu -i -p "Choose" -no-custom -scroll-method 1 -font "JetBrainsMonoNerdFont 11")" in
+case "$(echo -e "shutdown\nreboot\nlock" | rofi -dmenu -i -p "Choose" -no-custom -scroll-method 1 -font "JetBrainsMonoNerdFont 11")" in
 shutdown)
   case "$(echo -e "yes\nno" | rofi -dmenu -i -p "Are You Sure?" -no-custom -scroll-method 1 -font "JetBrainsMonoNerdFont 11")" in
   yes) systemctl poweroff ;;
@@ -12,10 +12,6 @@ reboot)
   yes) systemctl reboot ;;
   no) exit ;;
   esac
-  ;;
-suspend)
-  slock &
-  systemctl suspend
   ;;
 lock) exec slock ;;
 esac
