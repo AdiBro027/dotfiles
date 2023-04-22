@@ -2,7 +2,7 @@ configuration {
 modes: "window,drun,run,filebrowser";
 	font: "JetBrainsMonoNerdFont 11";
     lines: 10;
-/*	location: 0;*/
+	location: 0;
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
@@ -27,7 +27,7 @@ modes: "window,drun,run,filebrowser";
 /*	sorting-method: "normal";*/
 /*	case-sensitive: false;*/
 /*	cycle: true;*/
-	sidebar-mode: true;
+	/* sidebar-mode: true; */
 /*	hover-select: false;*/
 /*	eh: 1;*/
 /*	auto-select: false;*/
@@ -150,4 +150,5 @@ modes: "window,drun,run,filebrowser";
       sorting-method:    "name";
   }
 }
+
 @theme "gruvbox-dark"
